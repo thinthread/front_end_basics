@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport", content="width-device-width, initial-scale-1.0">
+    <!-- Note -  For tables to show a grid, you have to use CSS styling -->
+    <!-- There are 4 ways to apply CSS styling to HTML
+            - Add styling directly in the <head> block element deirectly to <style> tag
+                -This style tag adds CSS styling to this page directly 
+                    <style type="text/css">
+                        table, td, th{border:1px solid black;}
+                    </style>
+            - Add styling directly in a tag
+                - <table style="border:1px solid black;">
+                        <thead>
+                            <tr>
+                                <th>Projects</th>
+                                <th>Date Started</th>
+                                <th>Date Completed</th>
+                            </tr>
+                        </thead>
+
+
+            - Create a CSS module/file that you will reference, if the file is in the same dir use the file name only
+                if the file is in a diffierent dir give the absolute path from the HTML file to the CSS file.
+                    - You can add id's to tags and refence the id in a CSS module, or you can refence a particular type
+                    of tag to add design to those tags alone.
+
+            - Create a CSS module/file that you will reference, if the file is in the same dir use the file name only
+                if the file is in a diffierent dir give the absolute path from the HTML file to the CSS file
+                    - The styling here can apply to the entire page or multiple pages ex. of css file:
+                        - table, td, th{border:1px solid black;}-->
+                    
+    <!-- This is link reference to a seperate module/file of CSS code-->
+    <link rel="stylesheet" href="style_table.css"> 
+    
+    <script type="text/javascript"></script>
+    <title>Tables</title>
+</head>
+<body>
+    <h1>Tables</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="index_2.html">About</a> |
+        <a href="temp/contact.html">Contact</a> |
+        <a href="index_links.html">Lesson Links</a> |
+        <a href="http://www.facebook.com" target="_blank">FaceBook</a> |
+        <a href="index_imagetags.html">Images</a> |
+        <a href="portfolio.html">Portfolio</a> |
+        <a href="index_formating.html">Formating</a> |
+        <a href="lists.html">Lists</a> |
+        <a href="list_of_services.html">List of Services</a> |
+        <a href="table.html">Table</a> |
+        <a href="hours_table.html">Hours of Operations Table</a> |
+        <a href="forms.html">Forms</a> |
+        <a href="contact_form.html">Contact Form</a> |
+        <a href="h5_semantic_elements.html">H5 Semantic Elements</a> |
+        <a href="iframes.html">HTML iFrames</a> |
+    </nav>
+    <br>
+    <p> 
+        <table>
+            <thead>
+                <tr>
+                    <th>Projects</th>
+                    <th>Date Started</th>
+                    <th>Date Completed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Build Book Shelves</td>
+                    <td>Jun. 10</td>
+                    <td>Not Done</td>
+                </tr>
+                <tr>
+                    <td>Dawin Micro Apt</td>
+                    <td>Jun. 10</td>
+                    <td>Not Done</td>
+                </tr>
+                <tr>
+                    <td colspan="1">Total # Projects Done:</td>
+                    <td colspan="2">0</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Projects</th>
+                    <th>Date Started</th>
+                    <th>Date Completed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Build Book Shelves</td>
+                    <td rowspan="2">Jun. 10</td>
+                    <td>Not Done</td>
+                </tr>
+                    <tr>
+                    <td>Dawin Micro Apt</td>
+            
+                    <td>Not Done</td>
+                </tr>
+                <tr>
+                    <td colspan="1">Total # Projects Done:</td>
+                    <td colspan="2">0</td>
+                </tr>
+            </tbody>
+        </table>
+    </p>
+
+
+</body>
+</html> 

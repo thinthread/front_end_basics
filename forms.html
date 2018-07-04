@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <link rel="stylesheet" href="style_table.css"> 
+    <script type="text/javascript"></script>
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="index_2.html">About</a> |
+        <a href="temp/contact.html">Contact</a> |
+        <a href="index_links.html">Lesson Links</a> |
+        <a href="http://www.facebook.com" target="_blank">FaceBook</a> |
+        <a href="index_imagetags.html">Images</a> |
+        <a href="portfolio.html">Portfolio</a> |
+        <a href="index_formating.html">Formating</a> |
+        <a href="lists.html">Lists</a> |
+        <a href="list_of_services.html">List of Services</a> |
+        <a href="table.html">Table</a> |
+        <a href="hours_table.html">Hours of Operations Table</a> |
+        <a href="forms.html">Forms</a> |
+        <a href="contact_form.html">Contact Form</a> |
+        <a href="h5_semantic_elements.html">H5 Semantic Elements</a> |
+        <a href="iframes.html">HTML iFrames</a> |
+    </nav>
+    <br>
+    <br>
+    <h4>Old School - Before HTML5</h4>
+    <form actoin="login.py" method="post">
+    <!-- post method is more secure than the get, it will hide info that is passed via browser submit field -->
+        <label for="username">Username:</label><input id="username" type="text" name="username"><br><br> 
+        <!-- Username: <input type="text" name="username" value="Darwin"><br><br>  you can pass in names  -->
+        <label for="pw">Password:</label><input id="pw" type="password"><br><br>
+        Gender:
+            Non-binary <input type="radio" name="gender" value="Non-binary">
+            Female <input type="radio" name="gender" value="Female">
+            Male <input type="radio" name="gender" value="Male">
+            Other <input type="radio" name="gender" value="Other" checked><br><br>
+        Do you agree to the Terms and Conditions?:
+            <input type="checkbox" name="TermsConditions" value="yes" checked><br><br>
+            <!-- <input type="checkbox" name="TermsConditions" value="yes" checked><br><br> can do pre-check--> 
+        <input type="submit" value="Login">
+    </form><br><br><br><br><br><br>
+    <h4>New - HTML 5</h4>
+    <form action="form_details.py">
+    <!-- action="" allows us to submit for info from frontend to backend. Forms can go to diffferent backend places-->
+        Color a space/button/input field:<input type="color"><br><br>
+        <!-- Shows a button or an input field in a desired colo, before HTML 5 CSS only -->
+        Date selection: <input type="time"><br><br>
+        <!-- Shows calander to pick a date, before HTML 5 JS only -->
+        Date/Time/Location selection:<input type="datetime-local"><br><br>
+        <!-- Shows calander to picj a date, time and location, before HTML 5JS only -->
+        Enter in a teliphone number:<input type="tel"><br><br>
+        <!-- checks to see if user is entering a grouping of characters that look like a phone number, before HTML 5 JS only-->
+        Email check for @ symbol: <input type="email"><br><br>
+        <!-- Checks for the data befor @ and after @, does not check for TLD example .com, before HTML 5 JS only-->
+        Enter in proper URL:<input type="url"><br><br>
+        <!-- Check for proper URL, before HTML 5 JS only-->
+        Enter in a number:<input type="number" min="1" max="100"><br><br>
+        <!-- Only allows user to enter in a number, has a toggle to pick a number, before HTML 5 JS only -->
+        Slide bar option to select from a range 1 to 100:<input type="range" min="1" max="100"><br><br><br>
+        <!-- Slide bar know as range, before HTML 5 JS only -->
+        <input type="submit">
+    </form><br><br><br><br><br><br>
+    <form  method="get">
+    <!-- The get method is not very secure for sensative info like passwords -->
+        Contact form:<br><br>
+        Subject:
+            <select name="subject" placeholder="Select One Please">
+                <option value="Select_Subject">Select Subject</option>
+                <option value="Support">Support</option>
+                <option value="Say_hi">Say hi!</option>
+                <option value="Billing">Billing</option>
+                <option value="Sales">Buy Somthing</option>
+            </select><br><br>
+        Write a message here:<textarea name="message" rows="3" cols="50" placeholder="Tell us your thoughts"></textarea><br><br>
+        Uploading portion of the form:<br><br>
+        Upload your file here:<input type="file"><br><br>
+        <input type="submit" value="Submit"><br><br>
+        <button type="button">Click me!</button>
+    </form>
+
+</body>
+</html>

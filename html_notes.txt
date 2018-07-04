@@ -1,0 +1,443 @@
+Language Notes:
+    HTML - Hyper Text Markup Language (One of many markup Languages)
+        - HTML is composed of a tree of HTML nodes, such as text nodes. Each node can have HTML attributes specified.
+        - Ways to send page
+        - Instructions on how to construct and deconstruct a page
+        - It gives us content and structure, but not much in the way of styling
+        
+        - Handling special characters & copy
+            - Find character references here:    
+                - https://dev.w3.org/html5/html-author/charref 
+
+            - Ascii
+                - example:
+                    - The copy write simbol and other characters not on your key-board
+                    - copy write symbol = &copy;
+                        - The "&" infront of a command like "copy" followed by ";", tells
+                          HTML to handle the "copy" as a command for special characters and not just text
+                        - Note: There should be NO spaces between the "&" and the command to follow
+
+        - Comment your code
+            <!-- comment here -->
+
+        - Tags/ Elements/ Atributes:
+
+            - Tag - HTML code that defines every structure on an HTML page, including the placement of text and images and hypertext links. HTML reference and gains access those items on a page via tags. Tags begin with the less-than (<) character and end with greater-than (>). These symbols are also called "angle brackets."
+
+            - Element -An HTML element is an individual component of an HTML document or web page, once this has been parsed into the Document Object Model. 
+
+                - Block Element - elements are usually either "block-level" elements or "inline" elements. A block-level element occupies the entire space of its parent element (container), thereby creating a "block." 
+
+            - Atribute - Is a modifier of an HTML element type. An attribute either modifies the default functionality of an element type or provides functionality to certain element types unable to function correctly without them. In HTML syntax, an attribute is added to an HTML start tag.
+           
+            - tag only - ex:
+                - <h1></h1>
+           
+            - element  - ex:
+                - <h1>Content here!</h1>
+                    - elements are the tags with stuff in the open tag and close tag if there is a close tag.
+
+            - atributes - ex:
+                -<html lang="en"></html>
+                    - the 'lang="en"' inside of the open tag is an atribute of that tag
+                    - It contains additional information
+                    - small list of atributes -
+                        - id=""
+                        - class=""
+                        - href=""
+                        - conent=""
+                        - name=""
+                        - title=""
+
+            - tags -
+                - Look up tags -
+                    - https://dev.w3.org/html5/html-author/
+                    - https://developer.mozilla.org/en-US/docs/Web/HTML/Reference
+
+                - Basic Layout:
+
+                - Header Tags and Meta Data:
+                    - <head></head>
+                    - <meta></meta>
+                    - <style></style>
+                    - <script></script>
+                    - <title></title>
+
+                - Heading Tags or Headings:
+                    - <h1></h1> (largest) through <h6></h6> (smallest)
+                    - heading tags bring enphasys to the view but also search engines
+                
+                - Common Tags:
+                    - <p></p> - paragraph tag
+                        - <p>&nbsp;</p> , &nbsp is nonbreaking space - which is a large paragraph space... best to use CSS here in most cases
+                    
+                    - <br> - line breaks, self closing 
+                    - <hr> - horizontal lines, self closing tag
+
+                    - <a></a> - A hyperlink tag, whis is used to link from one page to another, The most importnant atribute of this tah  is the href="" atribute, which indicates the link's destination
+                        - <a href="#mw-head">navigation</a>
+
+                    - <div></div> - Devision tag , is often used as acontainer for other elements to style them with CSS or perform certain tasks in JavaScript 
+                        - <div id="jump-to-nav" class="mw-jump"> , <div id="jump-to-nav" class="mw-jump">From Wikipedia</div> 
+
+                - Images and linking them:
+
+                - Bookmarks, Links and Hyper-links:
+
+            
+                - <span></span>
+                - <svg></svg>
+                - <sup></sup>
+                
+
+                List Tag:
+                    - You can nest these tags and mix them
+                    - Unordered list:
+                        -<ul></ul> - Unordered list - gives you bullet points
+                            - must use <li></li> nested in it ex:
+                                - <ul>
+                                     <li>Item to be listed here</li>
+                                     <li>Item to be listed here</li>
+                                  </ul> 
+
+                    - Orderd list vanila:
+                        -<ol></ol> Ordered list - gives you numbers
+                            - must use <li></li> nested in it ex:
+                                - <ol>
+                                     <li>Item to be listed here</li>
+                                     <li>Item to be listed here</li>
+                                  </ol>
+
+                    - Orderd list start count ar #5:
+                        -<ol></ol> Ordered list - gives you numbers starts count at any given number.
+                            - must use <li></li> nested in it ex:
+                                - <ol start="5">
+                                     <li>Item to be listed here</li>
+                                     <li>Item to be listed here</li>
+                                  </ol>
+
+                    - Ordered list count with lower-case or upper-case letters:
+                        -<ol></ol> Ordered list - gives you count with letters upper or lower
+                            - Lower case - type="a"
+                            - Upper case - type="A"
+                            - must use <li></li> nested in it ex:
+                                - <ol type="a">
+                                     <li>Item to be listed here</li>
+                                     <li>Item to be listed here</li>
+                                  </ol>
+
+                    - Ordered list count with letters and start and character 5 at other:
+                        -<ol></ol> Ordered list - gives you count with letters upper or lower and you can start the count at any character.
+                            - must use <li></li> nested in it ex:
+                                - <ol type="a" start="5">
+                                     <li>Item to be listed here</li>
+                                     <li>Item to be listed here</li>
+                                  </ol>
+
+                    - Ordered list count with Roman numerals uppper or lower:
+                        -<ol></ol> Ordered list - gives you count with Roman numerals upper or lower.
+                            - Lower case - type="i"
+                            - Upper case - type="I"
+                            - must use <li></li> nested in it ex:
+                                - <ol type="i">
+                                     <li>Item to be listed here</li>
+                                     <li>Item to be listed here</li>
+                                  </ol>
+
+                    - Ordered list count with Roman numerals and start and character 5 at other:
+                        -<ol></ol> Ordered list - gives you count with upper or lower and you can start the count at any character.
+                            - Lower case - type="i"
+                            - Upper case - type="I"
+                            - must use <li></li> nested in it ex:
+                                 - <ol type="I" start="5">
+                                     <li>Item to be listed here</li>
+                                     <li>Item to be listed here</li>
+                                  </ol>
+
+                    - Descriptive lists, allow for nesting or outline form style listing:
+                        <dl> - Descriptive lists
+                            <dt>Computers</dt>  - dt - Defines term or name
+                                <dd>Web Design</dd>  - dd Defines a description
+                                <dd>SEO</dd>
+                            <dt>Coding</dt>
+                                <dd>HTML</dd>
+                                <dd>CSS</dd>
+                        </dl>
+
+                    - Nesting list:
+                        Lists with in lists - using ordered lists and unordered lists nested:
+                        <ol type="I">
+                            <li>Computers</li>
+                                <ul>
+                                    <li>Web Design</li>
+                                    <li>Hosting</li>
+                                    <li>SEO</li>
+                                        <ol>
+                                            <li>SEM</li>
+                                            <li>Ranking</li>
+                                        </ol>
+                                </ul>
+                            <li>Painting</li>
+                            <li>Wash dishes</li>    
+                            <li>Clean Study Room</li>
+                        </ol>
+
+                    - Special note on CSS -  on CSS styling that will over-ride html list formating, Adding style="list-style-type:disc" to the "ol" tag will chainge it to an unordered list without out having to change the tag<br> 
+                        Ordered list count with letters, numbers or roman-numeralsor any kind of list there is a tag for and start at what ever character you want but manipulate and over ride its atributes with CSS:
+
+                        <ol type="i" start="5" style="list-style-type:disc">
+                            <li>Item to be listed here</li>
+                            <li>Item to be listed here</li>
+                        </ol>
+
+                - Table tag:
+                    - <table></table> - Table Tag
+                    - <tr></tr> - Table Row Tag - nest inside for rows
+                    - <td></td> - Tag Defines Tag - creates cells
+                    - <th></th> = Table Head Tag -  creates head of table by bolding text in the cells
+
+                    - <thead></thead> Table Head - does not do anything - for programer readability. To see at a glance if the table has a defined head, <th> and <tr> do the work of creating head
+                    
+                    -<tdoby>-</tdoby> - Table Body - does not do anyting - for programers readability. To see at a glance if the table has a defined body, <td> and <tr> define the table body
+
+                    - Table Atributes
+                        - colspan="2" - Collumn Span - a cell in a row can span more than one collumn width
+                        - rowspan="4" - Row Span - a cell in a collumn can span more than on row width
+
+                    - Basic Table - NO head
+                        <table>
+                            <td>Build Book Shelves</td>
+                            <td>Jun. 10</td>
+                            <td>Not Done</td>
+                        </table>
+
+                    - Table with Head and Body
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Projects</th>
+                                    <th>Date Started</th>
+                                    <th>Date Completed</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Build Book Shelves</td>
+                                    <td>Jun. 10</td>
+                                    <td>Not Done</td>
+                                </tr>
+                        </table>
+                    
+                    - Table with tag elements
+                        <table>
+                            <tr>
+                                <td colspan="1">Total # Projects Done:</td>
+                                <td colspan="2">0</td>
+                            </tr>
+                            <tr>
+                                <td>Build Book Shelves</td>
+                                <td rowspan="2">Jun. 10</td>
+                                <td>Not Done</td>
+                            </tr>
+                        </table>
+
+                - Forms
+                    <form>
+                        Username: <input type="text"><br>
+                        Password: <input type="password"><br>  - type="password" hides pw
+                        <input type="submit" value="Login">
+                    </form>
+
+                    <form>
+                        Username: <input type="text" name="username"><br><br> 
+                        <!-- Username: <input type="text" name="username" value="Darwin"><br><br>  you can pass in names  -->
+                        Password: <input type="password"><br><br>
+                        Gender:
+                            Non-binary <input type="radio" name="gender" value="Non-binary">
+                            Femail <input type="radio" name="gender" value="Femail">
+                            Male <input type="radio" name="gender" value="Male">
+                            Other <input type="radio" name="gender" value="Other" checked><br><br>
+                            Do you agree to the Terms and Conditions?:
+                            <input type="checkbox" name="TermsConditions" value="yes"><br><br>
+                            <!-- <input type="checkbox" name="TermsConditions" value="yes" checked><br><br> can do pre-check--> 
+                        <input type="submit" value="Login">
+                    </form>}
+
+                    - Form Atributes PRE-HTML5
+                        - <names="username"> gets passed to the backend
+                        - <option value="" selected></option> ???
+                        - <textarea>
+                        
+                        - Type Atributes - some of them
+                            - <type="radio"> , scantron looking selection 
+                            - <type="text"> , limitied text field
+                            - <type="password"> , hides password as user types
+                            - <type="checkedbox"> , default checkedbox
+                            - <type="submit"> , user as submit button or login
+
+
+                    - Attributes
+                        - <labels>Labels<label for="name">Name of Field</label>
+                        - Input specific attributes 
+                            - min="1"
+                                - Placeholder required
+                            - max="5"
+                                - Placeholder required 
+
+                    - HTML5 Extras - Note tha not all browsers support HTML5, but most do
+                        - General Atributes
+                            <input type="color"> will make a button or field in color 
+                        
+                        - Form Atributes
+
+                            - Type , <input type="">
+                                - color
+                                    <input type="color">
+                                    Color a space/button/input field:<input type="color"> 
+                                    Shows a button or an input field in a desired colo, before HTML 5 CSS only
+                                
+                                - number , check - check if number and from min to max
+                                    Enter in a number:<input type="number" min="1" max="100">Only allows user to enter in a number, has a toggle to pick a number, before HTML 5 JS only
+
+                                - date , selection only
+                                    <input type="date"> 
+                                    Date selection:<input type="date"> 
+                                    Shows calander to pick a date, before HTML 5 JS only 
+
+                                        related atribute types, work the same as 'date':
+                                            
+                                            - month
+                                            - week
+                                            - time
+
+                                - datetime-local , date/time/location
+                                    <input type="datetime-local">
+                                    Date/Time/Location selection:<input type="datetime-local">Shows calander to pick a date, time and location, before HTML 5JS only
+
+                                - email check
+                                    <input type="email">
+                                    Email check for @ symbol:<input type="email">
+                                    Checks for the data befor @ and after @, does not check for TLD example .com, before HTML 5 JS only
+
+                                - url check - check if true URL
+                                    <input type="url">
+                                    Enter in proper URL:<input type="url">
+                                    Check for proper URL, before HTML 5 JS only
+
+                                - Phone Number
+                                    <input type="tel">
+                                    Enter in a teliphone number:<input type="tel">
+                                    Checks to see if user is entering a grouping of characters that look like a phone number, before HTML 5 JS only
+
+                                - range - slider bar
+                                    <input type="range" min="1" max="100">
+                                    Slide bar option to select from a range 1 to 100:<input type="range" min="1" max="100">
+                                    Slide bar know as range, before HTML 5 JS only
+
+                                - button, basic click me button
+                                    <button type="button">Click me!</button>
+
+                                - search ???
+                                
+                                - image/file upload
+                                    <input type="file">
+                                    Upload your file here:<input type="file">
+
+                                - textarea - can choose size of the field 
+                                    <textarea name="message" rows="3" cols="50">Tell us your thoughts.</textarea>
+                                    Write a message here:<textarea name="message" rows="3" cols="50">Tell us your thoughts.</textarea>
+
+                                - label , use with input type
+                                    <label>Email Address:</label>
+                                    <input type="text" name="user_email" >
+
+                                - select - pulldown menue select
+                                    Subject:
+                                        <select name="subject">
+                                            <option value="Select_Subject">Select Subject</option>
+                                            <option value="Support">Support</option>
+                                            <option value="Say_hi">Say hi!</option>
+                                            <option value="Billing">Billing</option>
+                                            <option value="Sales">Buy Somthing</option>
+                                        </select>
+
+                    - HTML 5 Sample form:
+                        <form action="login.py"> , submit form  info frontend to backend
+                            Color a space/button/input field:<input type="color"><br><br>
+                            Date selection: <input type="time"><br><br>
+                            Date/Time/Location selection:<input type="datetime-local"><br><br>
+                            Enter in a teliphone number:<input type="tel"><br><br>
+                            Email check for @ symbol: <input type="email"><br><br>
+                            Enter in proper URL:<input type="url"><br><br>
+                            Enter in a number:<input type="number" min="1" max="100"><br><br>
+                            Slide bar option to select from a range 1 to 100:<input type="range" min="1" max="100"><br><br><br>
+                            <input type="submit">
+                        </form><br><br><br><br><br><br>
+    
+                        <form  method="get"> 'get', not secure for info, 'post' is
+                            Contact form:<br><br>
+                            Subject:
+                            <select name="subject" placeholder="Select One Please">
+                                <option value="Select_Subject">Select Subject</option>
+                                <option value="Support">Support</option>
+                                <option value="Say_hi">Say hi!</option>
+                                <option value="Billing">Billing</option>
+                                <option value="Sales">Buy Somthing</option>
+                            </select><br><br>
+
+                            Write a message here:<textarea name="message" rows="3" cols="50" placeholder="Tell us your thoughts"></textarea><br><br>
+                            Uploading portion of the form:<br><br>
+                            Upload your file here:<input type="file"><br><br>
+                        <input type="submit" value="Submit"><br><br>
+                        <button type="button">Click me!</button>
+    </form>
+
+                - Specail tags:
+                    - Preformated text
+                        - <pre></pre> - Pre formatted text - will keep formating of text passed in
+
+
+                    - Self closing tags -
+                        - <meta charset="utf-8">
+                        - <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            - This tag sets up the site to scale to all devices, like mobile
+                        - <br> - line breaks, self closing 
+                        - <hr> - horizontal lines, self closing tag
+
+                - Template start Format tag
+                    - index.html for default starting page, it is the convention
+                    - <!doctype html> denotes html5 to the browser and other coders
+
+                - Markup Tags:
+                    - Formatting HTML Markup
+                        - common
+                            - <small></small> , <small>Small Text</small> , Makes text small
+                            - <big></big> , <big>Big text</big> , Makes text large
+
+                            - <sub></sub> , <sub>subscript</sub> , Sub for math
+                            - <sup></sup> , <sup>superscript</sup> , Power of for math
+
+                            - <mark></mark> , <mark>Marked</mark> , Highlights text
+                            
+                            - <u></u> , <u>Underline text</u>
+
+                            - <blockquote></blockquote> , <blockquote>Welcom to bloclquote</blockquote> , Separates text from body of text like wanting to emphasize a quote on its own
+
+                            - <code></code> , <code> This is code.</code> , Show code you do not want to render
+                    
+                    - OLD to Semantic NEW equivalencies 
+                        - Line through text
+                            - <del></del> , <del>deleted</del> , OLD
+                            - <strike></strike> , <strike>Strike Text</strike> , Semantic NEW
+                        - Bold text
+                            - <b></b> , <b>Bold text</b> ,  OLD
+                            - <strong></strong> , <strong> Bold </strong> , Semantic NEW
+                        - Abriviated
+                            - <acronym></acronym> , <acronym>and</acronym> OLD
+                            - <abbr></abbr> , <abbr title="World Wide Web">WWW</abbr> ,  Semantic NEW
+                        - Quotes, add quotes around text inline
+                            - <q></q> , <q>Quoted</q> , OLD
+                            - <cite></cite> , <cite>Quote text within cites</cite> , Semantic NEW
+                        - Italisize text
+                            - <i></i> , <i>Italic Text</i> OLD
+                            - <em></em> , <em> Emphasize or Italisize text </em> , Semantic NEW 

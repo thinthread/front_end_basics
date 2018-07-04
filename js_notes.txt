@@ -1,0 +1,5 @@
+Language notes:
+
+JavaScript -  Is actually ECMA Script
+        - Makes the skeleton of the the DOM dynamic
+        - Gives programming logic and interactivity, actions and responses

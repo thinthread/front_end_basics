@@ -1,0 +1,227 @@
+Introduction section 1 of 4:
+    Checkout:
+
+    https://codepen.io/pen/
+    free and and you can save the code, private costs money
+    online coder pad that encorperates html, css and js
+
+    https://web.archive.org
+
+    Placeholder Text - for layout:
+    http://www.blindtextgenerator.com/lorem-ipsum
+
+    HMTL Tag & charavter refferences and DOCs:
+        https://dev.w3.org/html5/html-author/
+        https://dev.w3.org/html5/html-author/charref
+        https://developer.mozilla.org/en-US/docs/Web/HTML/Reference
+
+    Devtools, chrome
+        - Open Devtools
+            - On Mac Cmd + Opt + i
+            - On PC Ctrl +Shift + i
+
+section 2 of 4:
+    Introduction to the Internet
+
+    IP address -
+        address you put in the browser to search for/ call-up a particular address or website.
+        IP address is like a phone number
+        IP - Internet Protocal, as set of charactors starting at 0 to 255 seperated by dots
+            ex:
+                Standard IPv4 address (dotted-decimal notaion)
+                    - Has:
+                    - 172.16.254.1
+                    - translated into bytes
+                        - 10101100.00010000.11111110.00000001
+                        - each section is 8 bits
+                        - 8 bits = 1 Byte
+                        - 32 bits(4 sections x 1 byte), or 4 bytes
+
+
+    ISP - Internet service provider
+
+    DNS - Domain Name Server
+
+    TLD - Top Level Domain, ".com" is a top level comain
+        - ex:
+            - TLD's
+                - .com    commercial
+                - .edu    education
+                - .org    organization
+                - .int    international organization
+                - .net    network
+                - .gov    government
+                - .mil    US military
+                - .io     British Indian Ocean Territory - tech companies use because i/o means input/output
+                - note -  All countries have their own TLD
+        
+        - You can make your own Top Level Domain
+            - Afilias - produces and supports TLD
+                - https://www.youtube.com/watch?v=Cup1msHegMo
+                - Note: 
+                    - submit applications to 
+
+    DOM - Document Object Model
+
+    Platform -
+        - A Platform is the substrate that your back-end language resides on and operates from, what you build a web-app on.
+        - Serverside platform ex:
+            - for Python(.py)(Platforms - Pyramid, Flask Django)
+            - Many others
+
+    Server -
+        - Many server side languages
+        - JavaScript using Server-sdie JavaScript(.ssjs , .js) ( Platform - Node.js) 
+
+
+    Client Side Code vs Server Side Code 
+        - Client Side - client-side an application that runs at the user's compter
+
+        - Server Side - server-side is an extnsion of back-end but explicitly reinfirces the fact that the processes are running somewhere else and not on the end user's compter(s).
+
+    Frontend Code vs Backend Code
+        - In software engineering the, the terms fronend and back end refers to the separation of concerns between the presentaiton layer(frontend), and the data access layer(backend) of a piece of software, or the physical infrastructure or hardware. In the client-server model, the client is usually considered the frontend and the server is usually considered the backend, even when osme presentation work is actually done on the server.
+
+        Front-End - Also faces the end-user and generally runs in a web browser based interface.
+
+        Back-End - Refers to processes and services that are running wither on another server or in the background of the users' computer. More often than not, it refers to processes that are not on the end users' computer.
+
+    Browser -
+        - Your browser can run HTML, CSS and JS code.
+        - Not all browsers will render out code from these languages in terms of the version of the languange.
+        - HTML is more uniform and universal acress a wide range of browsers.
+        
+
+    Webpages -
+        - Webpages code is the instructions used by the browser to display and how to display a website
+        - Browser read code and render the output
+        - To load a website you type a URL which is the address for the files sitting on another computer/server
+        - Those files are then read by the browser which is the softeare you are to view the file. Like  translater.
+        - Before browsers the internet was just digital information files that had no connection. Newtwirk of files. Content
+          would sit on cumputers called servers.
+        - HTML solved the problem and allowed for simple programming languages that could display content.
+        - Web browsers could then interpret the conent from the server and diplay it for the user.
+        - Browser makes a connection to the server and returns the conent.
+          Then the connection is cut and the browser stores the loaded conent locally.
+
+    Webpages ++ server side content -
+        - There are many differenet extension used to display webpages, and in some casesyou don't see the extension at all.
+            - front end ex:
+                - HTML HTM JS CSS
+
+        - Server Side
+            - back end ex:
+                - PHP JSP ASPX Python
+            - With no specified file it defaults to the index.html but this also depends on the server.
+            - Server side languages render thier inputs(get requests, post request) and outputs(get requests) through the DOM
+              which is the front-end, and intern gets rendered through a browser
+
+    Webpages Dynamic vs Static Pages-
+        - Dynamic - Updates and changes. Client side or server side script ot generate pages
+        - Static - No changes, stays the same. Delivered as it is stored.
+
+    Request Types:
+        HTTP GET request - Retrieves information from the server, simply loading a web page.
+
+        Post request - Method requests that a web server accepts the data enclosed in the body of the request message, most likely for storing it... Like when uploading a file/form to a database.
+
+
+    ISP, IP, LTD, DNS - how it works:
+        Your ISP connects(makes a get call) usuing a donain name to a DNS and returns the value of that 
+        get call as an IP address.
+
+        The Domain name gets translated into an IP address from the DNS, finds the TLD, then
+        returns the IP of the domain's name server.
+
+        It now knows the IP address of the server which hold the files for that domain.
+
+
+    Browser Connects to Server:
+
+        Browser connects to the server you requested, using a get request
+
+        Server resoinds with data of requested file. Checks path and returnds corresponding content.
+
+        If the file requires server end code, it runs the code and sends bacj the results as HTML, CSS and JavaScript.
+
+        Returned conent is then rendered by your browser.
+
+        Content needs to be transferred in a way that can reassembled correctly by the browser.
+
+
+
+File Structure Setup:
+    File extnsions html, htm, php, asp, js, css
+        - Different entensions
+        - Index page ? Is this like base.html ?
+        - Default
+        - Folder tree of a website file structure
+            - File Structure ex:
+                - bootstrap/
+                    - css/
+                        - bootstrap.css
+                        - bootstrap.min.css
+                    - js/
+                        - bootstrap.js
+                        - bootstrap.min.js
+                    - img/
+                        - glyphicons-halflings.png      
+                        - glyphicons-halflings-white.png
+
+Web Hosting / File Hosting:
+    - Get free hosting
+        - http://webfreehosting.net/login.php    
+        - getforge.com
+        - 1and1.com
+        - checkout heroukue
+
+    - Look at shared hosting and VPS hosting
+        - free is not always good
+        - VPS will give you your own domain name
+        - shared you will not be able to have your own domain, it will be a shared domain
+
+    - Specail note:
+        - Many online hosts will use cPanel
+            - cPanel will provide some services like securety, access to a BD, upload online.
+            - Presumably this is for very light websites and not for a web app
+
+Protocols:
+    - Protocols
+        - http - Hypertext Transfer Protocol
+        - https - Hypertext Transfer Protocol Secure
+        - ftp - File Transfer Protocol 
+            - standard network protocol used for the transfer of computer files between a client and server on a computer network.
+            - FTP files to hos ftp options amd jpw tp ;pad  files to the server. Filezilla Cyberduck
+                - https:////en.wikipedia.org/wiki/Comparison_of_FTP_client_software
+                - Filezilla
+                - Cyberduck
+                - CoffeeCup FreeFTP
+        - file
+        - ftp options
+
+Domain Names:
+    - Domain names allow visitors tp see your site without having to enter the IP address of your server
+    - IP address - Internet Protocol Address
+    - Picking a domain name 
+        - domain.com
+
+Possible Domain Names:
+    - wikipen.io
+    - wikipen.wiki
+    - wikipen.one
+    - wiki-pen.com
+
+    - wikipenarchive.com
+    - penmanac.com
+    - pen-o-pedia.com , taken: penpedia and penopedia
+    - penphilia.com
+
+Web Developer Tools:
+    - www.w3.org
+    - developer.mozila.org/en-US/
+    - codebeautify.org
+    - stackoverflow ---- sign up for an account if free
+
+    - Web content - free placeholder content - text and images:
+        - lorem-ipsum.perbang.dk
+        - placehold.it

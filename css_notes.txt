@@ -1,0 +1,5 @@
+Language notes:
+
+CSS - Cascading Style Sheets
+        - Is the styling or the skin of how a page is presented
+        - Styles the HTML using identifying tags

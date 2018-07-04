@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <link rel="stylesheet" type="text/css" href="style_table.css"> 
+    <script type="text/javascript"></script>
+    <title>Contact Form</title>
+</head>
+<body>
+    <h1>Contact Form</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="index_2.html">About</a> |
+        <a href="temp/contact.html">Contact</a> |
+        <a href="index_links.html">Lesson Links</a> |
+        <a href="http://www.facebook.com" target="_blank">FaceBook</a> |
+        <a href="index_imagetags.html">Images</a> |
+        <a href="portfolio.html">Portfolio</a> |
+        <a href="index_formating.html">Formating</a> |
+        <a href="lists.html">Lists</a> |
+        <a href="list_of_services.html">List of Services</a> |
+        <a href="table.html">Table</a> |
+        <a href="hours_table.html">Hours of Operations Table</a> |
+        <a href="forms.html">Forms</a> |
+        <a href="contact_form.html">Contact Form</a> |
+        <a href="h5_semantic_elements.html">H5 Semantic Elements</a> |
+        <a href="iframes.html">HTML iFrames</a> |
+    </nav>
+    <p>
+        <form>
+            <br>
+            <label for="user_name">Full Name:</label>
+            <input type="text" name="user_name" placeholder="First/Last Name" required><br><br>
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email" placeholder="Your email here." required><br><br>
+            <label for="department">Choose a Department:</label>
+                <select name="department" id="department">
+                    <option value="choose_department">Choose One</option>
+                    <option value="sales">Make a purchase</option>
+                    <option value="exchanges_returns">Exchanges/Returns</option>
+                    <option value="customer_service">Ask Customer Service</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="accounting">Accounting</option>
+                </select><br><br>
+            <label for="message">Message:</label> <br>    
+            <textarea name="message" id="message" style="width:400px;height:200px;" placeholder="Submit your questions or thoughts here. Thank you!" required="message"></textarea><br><br>
+            <input type="submit" name="submit_request" value="Submit Request"><br><br>
+        </form>
+    </p>
+
+</body>
+</html>
